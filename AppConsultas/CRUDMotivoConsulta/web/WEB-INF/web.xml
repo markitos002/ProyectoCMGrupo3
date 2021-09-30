@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ControlMotivo</servlet-name>
+        <servlet-class>Controlador.ControlMotivo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControlReceta</servlet-name>
+        <servlet-class>Controlador.ControlReceta</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControlCita</servlet-name>
+        <servlet-class>Controlador.ControlCita</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ControlTipoCita</servlet-name>
+        <servlet-class>Controlador.ControlTipoCita</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ControlMotivo</servlet-name>
+        <url-pattern>/ControlMotivo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControlReceta</servlet-name>
+        <url-pattern>/ControlReceta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControlCita</servlet-name>
+        <url-pattern>/ControlCita</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControlTipoCita</servlet-name>
+        <url-pattern>/ControlTipoCita</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
